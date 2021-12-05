@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'OnlineGrocery';
+
+  ngOnInit(): void {
+
+    if(navigator.onLine == false)
+    {
+      alert("Please turn on network connection");    
+    }
+
+
+  }
 }
